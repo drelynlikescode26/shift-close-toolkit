@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Shift Close Toolkit
+
+End-of-shift helper app for retail closing: quickly totals a cash drawer by entering bill/coin counts (optionally includes unopened coin rolls), shows drawer total vs target (ex: $200), and exports/records results for a clean closeout workflow.
+
+## Features
+
+- **Denomination Inputs**: Support for all common coins (Penny, Nickel, Dime, Quarter) and bills ($1, $5, $10, $20, $50, $100)
+- **Coin Rolls**: Optional toggleable section for unopened coin rolls
+- **Live Calculations**: Real-time subtotals and grand total with over/short comparison
+- **Data Persistence**: Automatically saves your work using localStorage
+- **Mobile-Friendly**: Responsive design optimized for mobile devices
+- **Offline-Capable**: Works without an internet connection
 
 ## Getting Started
 
-First, run the development server:
+First, install dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Next.js 16** - React framework
+- **TypeScript** - Type safety
+- **Tailwind CSS 4** - Styling
+- **localStorage** - Data persistence
 
-## Learn More
+## Available Scripts
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm start` - Start production server
+- `npm run lint` - Run ESLint
 
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
